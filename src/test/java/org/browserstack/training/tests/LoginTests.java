@@ -5,6 +5,7 @@ import org.browserstack.training.pageobjects.Login;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Reporter;
 import org.testng.annotations.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -43,6 +44,7 @@ public class LoginTests {
     @Test
     public void successfulLoginTest() {
         try {
+            Reporter.log("[[PROPERTY|id=TC-1664]]\n", true);
             homePage.goToLoginPage();
 
             loginPage.performLogin(correctUsername, correctPassword);
