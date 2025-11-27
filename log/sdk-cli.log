@@ -31828,3 +31828,417 @@
 2025-11-27T10:09:09.192Z CLI info  [garyb_bE4JkU]  [otxamwdns6nuxbkth6g8nclthwvllfsuz1kget64]  [7c8d3618-b1fc-4da4-bc0a-f1d2f1f8947e]  [PRODUCTION] Making GET request to https://api.browserstack.com
 2025-11-27T10:09:09.412Z CLI info  [garyb_bE4JkU]  [otxamwdns6nuxbkth6g8nclthwvllfsuz1kget64]  [7c8d3618-b1fc-4da4-bc0a-f1d2f1f8947e]  [PRODUCTION] Making POST request to https://eds.browserstack.com
 2025-11-27T10:09:10.013Z CLI info [main]  [garyb_bE4JkU]  [otxamwdns6nuxbkth6g8nclthwvllfsuz1kget64]  [7c8d3618-b1fc-4da4-bc0a-f1d2f1f8947e]  Received graceful signal termination, performing cleanup
+2025-11-27T11:44:49.865Z CLI info [main]     Server listening on port: 5401
+2025-11-27T11:44:50.082Z CLI info     Config : {"userName":"[REDACTED]","accessKey":"[REDACTED]","projectName":"Test-ZSC-3","buildName":"testng-tests","buildIdentifier":"#${BUILD_NUMBER}","framework":"testng","platforms":[{"os":"OS X","osVersion":"Big Sur","browserName":"Chrome","browserVersion":"latest"}],"parallelsPerPlatform":3,"source":"testng:sample-master:v1.1","browserstackLocal":true,"debug":false,"networkLogs":false,"consoleLogs":"errors","testObservability":true,"accessibility":true,"percy":true,"percyCaptureMode":"auto"}
+2025-11-27T11:44:50.111Z CLI info [testhub:module]  [garyb_bE4JkU]   [7bf2d37c-192f-4009-8262-86b323394c77]  Starting testhub from 34199:0
+2025-11-27T11:44:50.112Z CLI info  [garyb_bE4JkU]   [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2025-11-27T11:44:50.788Z CLI info [testhub:module]  [garyb_bE4JkU]   [7bf2d37c-192f-4009-8262-86b323394c77]  startBuild: response=tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck
+2025-11-27T11:44:50.791Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-11-27T11:44:51.012Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-11-27T11:44:52.811Z CLI info [percy:percy-binary]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Percy binary is up to date (ETag unchanged)
+2025-11-27T11:44:52.820Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making GET request to http://localhost:5338
+2025-11-27T11:44:53.754Z CLI info [percy:module]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  onStart: 7bf2d37c-192f-4009-8262-86b323394c77 isRunning=true
+2025-11-27T11:45:02.049Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2025-11-27T11:45:02.338Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making GET request to https://hub-euw.browserstack.com
+2025-11-27T11:45:02.484Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making GET request to https://hub-use.browserstack.com
+2025-11-27T11:45:03.075Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making GET request to https://hub-aps.browserstack.com
+2025-11-27T11:45:05.202Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_METHOD',
+    framework: 'TestNG',
+    uuid: 'd7ee4c3c-a9fc-41f3-a44f-fab456768a11',
+    name: 'setUp',
+    result: 'pending',
+    test_run_id: 'dfe18e58-6f63-40f2-833e-1716b5e8e341',
+    body: { lang: 'java', code: null },
+    scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'Login Test Suite',
+      'org.browserstack.training.tests.LoginTests'
+    ],
+    file_name: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    vc_filepath: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    location: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    started_at: '2025-11-27T11:45:05.188Z'
+  },
+  logs: []
+} to 34199:0
+2025-11-27T11:45:05.324Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Added the event {
+  event_type: 'LogCreated',
+  logs: [
+    {
+      testFrameworkName: 'TestNG',
+      testFrameworkVersion: '7.10.2',
+      testFrameworkState: 'LOG',
+      timestamp: '2025-11-27T11:45:05.318Z',
+      uuid: 'd7ee4c3c-a9fc-41f3-a44f-fab456768a11',
+      kind: 'TEST_LOG',
+      message: '"WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance."',
+      level: 'INFO',
+      test_run_uuid: 'd7ee4c3c-a9fc-41f3-a44f-fab456768a11'
+    }
+  ]
+} to 34199:0
+2025-11-27T11:45:05.482Z CLI info [accessibility:module]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  onDriverInit: 7bf2d37c-192f-4009-8262-86b323394c77 platformIndex=0
+2025-11-27T11:45:05.482Z CLI info [accessibility:module]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  onDriverInit: 7bf2d37c-192f-4009-8262-86b323394c77 platformIndex=0 isSupported=true
+2025-11-27T11:45:05.482Z CLI info [accessibility:module]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  onDriverInit: platformIndex=0 stored capabilities
+2025-11-27T11:45:05.482Z CLI info [sdk:service]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Driver initialized as primary driver: platformIndex=0
+2025-11-27T11:45:05.508Z CLI info [accessibility:service]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  AccessibilityConfig: platformIndex=0 isSupported=true platform=Chrome:latest
+2025-11-27T11:45:06.797Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_METHOD',
+      framework: 'TestNG',
+      uuid: 'd7ee4c3c-a9fc-41f3-a44f-fab456768a11',
+      name: 'setUp',
+      result: 'pending',
+      test_run_id: 'dfe18e58-6f63-40f2-833e-1716b5e8e341',
+      body: [Object],
+      scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      vc_filepath: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      location: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      started_at: '2025-11-27T11:45:05.188Z'
+    },
+    logs: []
+  },
+  { event_type: 'LogCreated', logs: [ [Object] ] }
+] to 34199:0
+2025-11-27T11:45:06.799Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-11-27T11:45:11.938Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'BEFORE_METHOD',
+    framework: 'TestNG',
+    uuid: 'd7ee4c3c-a9fc-41f3-a44f-fab456768a11',
+    name: 'setUp',
+    result: 'passed',
+    test_run_id: 'dfe18e58-6f63-40f2-833e-1716b5e8e341',
+    body: { lang: 'java', code: null },
+    scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'Login Test Suite',
+      'org.browserstack.training.tests.LoginTests'
+    ],
+    file_name: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    vc_filepath: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    location: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    started_at: '2025-11-27T11:45:05.188Z',
+    finished_at: '2025-11-27T11:45:11.929Z'
+  },
+  logs: []
+} to 34199:0
+2025-11-27T11:45:11.988Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Added the event {
+  event_type: 'CBTSessionCreated',
+  test_run: {
+    uuid: '8e30201f-a68d-4e65-9936-474bb369654b',
+    integrations: { browserstack: [Object] }
+  }
+} to 34199:0
+2025-11-27T11:45:11.995Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Added the event {
+  event_type: 'TestRunStarted',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '8e30201f-a68d-4e65-9936-474bb369654b',
+    name: 'successfulLoginTest',
+    body: {
+      lang: 'java',
+      code: 'public void org.browserstack.training.tests.LoginTests.successfulLoginTest()'
+    },
+    identifier: 'successfulLoginTest',
+    scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+    scopes: [
+      'Login Test Suite',
+      'org.browserstack.training.tests.LoginTests'
+    ],
+    file_name: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+    vc_filepath: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+    location: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+    meta: {},
+    result: 'pending',
+    duration_in_ms: null,
+    started_at: '2025-11-27T11:45:11.961Z',
+    failure: undefined,
+    failure_type: undefined,
+    failure_reason: undefined,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: { rerun_name: 'Regression-0' },
+    hooks: [],
+    product_map: {
+      observability: true,
+      accessibility: true,
+      percy: true,
+      automate: true,
+      app_automate: false
+    },
+    integrations: { browserstack: [Object] }
+  },
+  logs: []
+} to 34199:0
+2025-11-27T11:45:12.802Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'BEFORE_METHOD',
+      framework: 'TestNG',
+      uuid: 'd7ee4c3c-a9fc-41f3-a44f-fab456768a11',
+      name: 'setUp',
+      result: 'passed',
+      test_run_id: 'dfe18e58-6f63-40f2-833e-1716b5e8e341',
+      body: [Object],
+      scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      vc_filepath: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      location: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      started_at: '2025-11-27T11:45:05.188Z',
+      finished_at: '2025-11-27T11:45:11.929Z'
+    },
+    logs: []
+  },
+  {
+    event_type: 'CBTSessionCreated',
+    test_run: {
+      uuid: '8e30201f-a68d-4e65-9936-474bb369654b',
+      integrations: [Object]
+    }
+  },
+  {
+    event_type: 'TestRunStarted',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '8e30201f-a68d-4e65-9936-474bb369654b',
+      name: 'successfulLoginTest',
+      body: [Object],
+      identifier: 'successfulLoginTest',
+      scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+      scopes: [Array],
+      file_name: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+      vc_filepath: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+      location: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+      meta: {},
+      result: 'pending',
+      duration_in_ms: null,
+      started_at: '2025-11-27T11:45:11.961Z',
+      failure: undefined,
+      failure_type: undefined,
+      failure_reason: undefined,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [],
+      product_map: [Object],
+      integrations: [Object]
+    },
+    logs: []
+  }
+] to 34199:0
+2025-11-27T11:45:12.803Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-11-27T11:45:21.831Z CLI warn [TEST REPORTING AND ANALYTICS:java:testng]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  TestRunFinished: event={"test_hook_last_started":"BEFORE_METHOD","test_failure_type":null,"test_rerun_name":"Regression-0","test_result_at":"2025-11-27T11:45:21.160324","test_scope":"Login Test Suite.org.browserstack.training.tests.LoginTests","test_framework_name":"TestNG","test_tags":"","cbt_session_created":true,"test_started_at":"2025-11-27T11:45:11.961496","platform_index":0,"test_failure":null,"test_framework_version":"7.10.2","test_logs":[],"test_scopes":["Login Test Suite","org.browserstack.training.tests.LoginTests"],"test_code":"public void org.browserstack.training.tests.LoginTests.successfulLoginTest()","test_id":"Regression-0@0","test_uuid":"8e30201f-a68d-4e65-9936-474bb369654b","test_ended_at":"2025-11-27T11:45:21.160894","automate_session_name":"Regression-00","test_hook_last_finished":"BEFORE_METHOD","test_session_name":"org.browserstack.training.tests.LoginTests-successfulLoginTest","test_hook_state":"sdk:hook:7f23af49","custom_metadata":{},"test_failure_reason":null,"test_location":"src/test/java/org/browserstack/training/tests/LoginTests.java","test_hooks_started":{"BEFORE_METHOD":[]},"test_file_path":"src/test/java/org/browserstack/training/tests/LoginTests.java","test_result":"passed","test_hooks_finished":{"BEFORE_METHOD":[{"hook_name":"setUp","hook_result":"passed","test_file_path":"untitled/src/test/java/org/browserstack/training/tests/LoginTests.java","event_started_at":"2025-11-27T11:45:05.188055","hook_id":"d7ee4c3c-a9fc-41f3-a44f-fab456768a11","hook_logs":[],"logs":[],"key":"BEFORE_METHOD","custom_metadata":{},"event_ended_at":"2025-11-27T11:45:11.929522","test_location":"untitled/src/test/java/org/browserstack/training/tests/LoginTests.java"}]},"hook_id":"d7ee4c3c-a9fc-41f3-a44f-fab456768a11","driver_init":true,"test_meta":{},"isBrowserstackAutomationSession":true,"test_name":"successfulLoginTest","test_init":true,"logs":[]}
+2025-11-27T11:45:21.832Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Added the event {
+  event_type: 'TestRunFinished',
+  test_run: {
+    type: 'test',
+    framework: 'TestNG',
+    uuid: '8e30201f-a68d-4e65-9936-474bb369654b',
+    name: 'successfulLoginTest',
+    body: {
+      lang: 'java',
+      code: 'public void org.browserstack.training.tests.LoginTests.successfulLoginTest()'
+    },
+    identifier: 'successfulLoginTest',
+    scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+    scopes: [
+      'Login Test Suite',
+      'org.browserstack.training.tests.LoginTests'
+    ],
+    file_name: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+    vc_filepath: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+    location: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+    meta: {},
+    result: 'passed',
+    duration_in_ms: 9199,
+    started_at: '2025-11-27T11:45:11.961Z',
+    finished_at: '2025-11-27T11:45:21.160Z',
+    failure: null,
+    failure_type: null,
+    failure_reason: null,
+    retry_of: null,
+    custom_metadata: {},
+    tags: [],
+    customRerunParam: { rerun_name: 'Regression-0' },
+    hooks: [ 'd7ee4c3c-a9fc-41f3-a44f-fab456768a11' ],
+    product_map: {
+      observability: true,
+      accessibility: true,
+      percy: true,
+      automate: true,
+      app_automate: false
+    }
+  },
+  logs: []
+} to 34199:0
+2025-11-27T11:45:22.804Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Processing batch event [
+  {
+    event_type: 'TestRunFinished',
+    test_run: {
+      type: 'test',
+      framework: 'TestNG',
+      uuid: '8e30201f-a68d-4e65-9936-474bb369654b',
+      name: 'successfulLoginTest',
+      body: [Object],
+      identifier: 'successfulLoginTest',
+      scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+      scopes: [Array],
+      file_name: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+      vc_filepath: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+      location: 'src/test/java/org/browserstack/training/tests/LoginTests.java',
+      meta: {},
+      result: 'passed',
+      duration_in_ms: 9199,
+      started_at: '2025-11-27T11:45:11.961Z',
+      finished_at: '2025-11-27T11:45:21.160Z',
+      failure: null,
+      failure_type: null,
+      failure_reason: null,
+      retry_of: null,
+      custom_metadata: {},
+      tags: [],
+      customRerunParam: [Object],
+      hooks: [Array],
+      product_map: [Object]
+    },
+    logs: []
+  }
+] to 34199:0
+2025-11-27T11:45:22.804Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-11-27T11:45:35.654Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Added the event {
+  event_type: 'HookRunStarted',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_METHOD',
+    framework: 'TestNG',
+    uuid: '56fbabec-ab95-429d-9451-1b6d99b858cd',
+    name: 'tearDown',
+    result: 'pending',
+    test_run_id: '8e30201f-a68d-4e65-9936-474bb369654b',
+    body: { lang: 'java', code: null },
+    scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'Login Test Suite',
+      'org.browserstack.training.tests.LoginTests'
+    ],
+    file_name: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    vc_filepath: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    location: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    started_at: '2025-11-27T11:45:35.640Z'
+  },
+  logs: []
+} to 34199:0
+2025-11-27T11:45:36.814Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Processing batch event [
+  {
+    event_type: 'HookRunStarted',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_METHOD',
+      framework: 'TestNG',
+      uuid: '56fbabec-ab95-429d-9451-1b6d99b858cd',
+      name: 'tearDown',
+      result: 'pending',
+      test_run_id: '8e30201f-a68d-4e65-9936-474bb369654b',
+      body: [Object],
+      scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      vc_filepath: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      location: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      started_at: '2025-11-27T11:45:35.640Z'
+    },
+    logs: []
+  }
+] to 34199:0
+2025-11-27T11:45:36.816Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-11-27T11:45:50.204Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Added the event {
+  event_type: 'HookRunFinished',
+  hook_run: {
+    type: 'hook',
+    hook_type: 'AFTER_METHOD',
+    framework: 'TestNG',
+    uuid: '56fbabec-ab95-429d-9451-1b6d99b858cd',
+    name: 'tearDown',
+    result: 'passed',
+    test_run_id: '8e30201f-a68d-4e65-9936-474bb369654b',
+    body: { lang: 'java', code: null },
+    scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+    custom_metadata: {},
+    tags: [],
+    scopes: [
+      'Login Test Suite',
+      'org.browserstack.training.tests.LoginTests'
+    ],
+    file_name: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    vc_filepath: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    location: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+    started_at: '2025-11-27T11:45:35.640Z',
+    finished_at: '2025-11-27T11:45:50.195Z'
+  },
+  logs: []
+} to 34199:0
+2025-11-27T11:45:50.823Z CLI info [testhub:request-queue-handler]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Processing batch event [
+  {
+    event_type: 'HookRunFinished',
+    hook_run: {
+      type: 'hook',
+      hook_type: 'AFTER_METHOD',
+      framework: 'TestNG',
+      uuid: '56fbabec-ab95-429d-9451-1b6d99b858cd',
+      name: 'tearDown',
+      result: 'passed',
+      test_run_id: '8e30201f-a68d-4e65-9936-474bb369654b',
+      body: [Object],
+      scope: 'Login Test Suite.org.browserstack.training.tests.LoginTests',
+      custom_metadata: {},
+      tags: [],
+      scopes: [Array],
+      file_name: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      vc_filepath: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      location: 'untitled/src/test/java/org/browserstack/training/tests/LoginTests.java',
+      started_at: '2025-11-27T11:45:35.640Z',
+      finished_at: '2025-11-27T11:45:50.195Z'
+    },
+    logs: []
+  }
+] to 34199:0
+2025-11-27T11:45:50.825Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2025-11-27T11:45:51.291Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making PUT request to https://collector-observability.browserstack.com
+2025-11-27T11:45:51.679Z CLI info [testhub:module]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  stopBuild: tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck request={"finished_at":"2025-11-27T11:45:50.583Z","finished_metadata":[],"custom_metadata":{}} response={"data":""}
+2025-11-27T11:45:51.681Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2025-11-27T11:45:51.684Z CLI info [TEST REPORTING AND ANALYTICS:module]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Visit https://automation.browserstack.com/builds/tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck to view build report, insights, and many more debugging information all at one place!
+2025-11-27T11:45:51.688Z CLI info [percy:module]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  onStop: 7bf2d37c-192f-4009-8262-86b323394c77
+2025-11-27T11:45:56.794Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making GET request to https://api.browserstack.com
+2025-11-27T11:45:57.011Z CLI info  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  [PRODUCTION] Making POST request to https://eds.browserstack.com
+2025-11-27T11:45:57.562Z CLI info [main]  [garyb_bE4JkU]  [tmzlory7q8a2geetw3wsxqkhtd3w0tmmxq8tdsck]  [7bf2d37c-192f-4009-8262-86b323394c77]  Received graceful signal termination, performing cleanup

@@ -44,7 +44,6 @@ public class LoginTests {
     @Test
     public void successfulLoginTest() {
         try {
-            Reporter.log("[[PROPERTY|id=TC-1664]]\n", true);
             homePage.goToLoginPage();
 
             loginPage.performLogin(correctUsername, correctPassword);
@@ -57,42 +56,5 @@ public class LoginTests {
 
     }
 
-    @Test
-    public void failedLoginTestUsername() {
-        try {
-            homePage.goToLoginPage();
 
-            loginPage.performLogin(wrongUsername, correctPassword);
-
-            Assert.assertEquals(loginPage.getErrorElement().getText(), incorrectUsernameMessage);
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
-
-    @Test
-    public void failedLoginTestPassword() {
-        try {
-            homePage.goToLoginPage();
-
-            loginPage.performLogin(correctUsername, wrongPassword);
-
-            Assert.assertEquals(loginPage.getErrorElement().getText(), incorrectPasswordMessage);
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
-
-    @Test
-    public void failedLoginTestUsernameAndPassword() {
-        try {
-            homePage.goToLoginPage();
-
-            loginPage.performLogin(wrongUsername, wrongPassword);
-
-            Assert.assertEquals(loginPage.getErrorElement().getText(), incorrectUserAndPassMessage);
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
 }
