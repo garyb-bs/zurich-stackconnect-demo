@@ -11,9 +11,9 @@ accessKey: BROWSERSTACK_ACCESS_KEY
 # ======================
 # The following capabilities are used to set up reporting on BrowserStack:
 # Set 'projectName' to the name of your project. Example, Marketing Website
-projectName: Test-ZSC-2
+projectName: Zurich-StackConnect
 # Set `buildName` as the name of the job / testsuite being run
-buildName: testng-tests
+buildName: zsc-build
 # `buildIdentifier` is a unique id to differentiate every execution that gets appended to
 # buildName. Choose your buildIdentifier format from the available expressions:
 # ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution
@@ -34,14 +34,14 @@ platforms:
     osVersion: "Big Sur"
     browserName: Chrome
     browserVersion: latest
-#  - os: Windows
-#    osVersion: "11"
-#    browserName: Edge
-#    browserVersion: latest
-#  - os: OS X
-#    osVersion: "Sonoma"
-#    browserName: Safari
-#    browserVersion: latest
+  - os: Windows
+    osVersion: "11"
+    browserName: Edge
+    browserVersion: latest
+  - os: OS X
+    osVersion: "Sonoma"
+    browserName: Safari
+    browserVersion: latest
 
 # =======================
 # Parallels per Platform

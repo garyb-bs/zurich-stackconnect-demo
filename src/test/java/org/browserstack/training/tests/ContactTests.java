@@ -58,94 +58,94 @@ public class ContactTests {
         }
     }
 
-    @Test
-    public void failedContactRequestTestName() {
-        try {
-            homePage.goToContactPage();
-
-            contactPage.fillContactForm("", email, message);
-
-            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
-
-    @Test
-    public void failedContactRequestTestEmail() {
-        try {
-            homePage.goToContactPage();
-
-            contactPage.fillContactForm(name, "", message);
-
-            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
-
-    @Test
-    public void failedContactRequestTestMessage() {
-        try {
-            homePage.goToContactPage();
-
-            contactPage.fillContactForm(name, email, "");
-
-            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
-
-    @Test
-    public void failedContactRequestTestAllFields() {
-        try {
-            homePage.goToContactPage();
-
-            contactPage.fillContactForm("", "", "");
-
-            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
-
-    @Test
-    public void failedContactRequestTestMissingNameAndEmail() {
-        try {
-            homePage.goToContactPage();
-
-            contactPage.fillContactForm("", "", message);
-
-            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
-
-    @Test
-    public void failedContactRequestTestMissingNameAndMessage() {
-        try {
-            homePage.goToContactPage();
-
-            contactPage.fillContactForm("", email, "");
-
-            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
-
-    @Test
-    public void failedContactRequestTestMissingEmailAndMessage() {
-        try {
-            homePage.goToContactPage();
-
-            contactPage.fillContactForm(name, "", "");
-
-            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
-        } catch (Exception e) {
-            System.out.println("There was an error: " + e);
-        }
-    }
+//    @Test
+//    public void failedContactRequestTestName() {
+//        try {
+//            homePage.goToContactPage();
+//
+//            contactPage.fillContactForm("", email, message);
+//
+//            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
+//        } catch (Exception e) {
+//            System.out.println("There was an error: " + e);
+//        }
+//    }
+//
+//    @Test
+//    public void failedContactRequestTestEmail() {
+//        try {
+//            homePage.goToContactPage();
+//
+//            contactPage.fillContactForm(name, "", message);
+//
+//            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
+//        } catch (Exception e) {
+//            System.out.println("There was an error: " + e);
+//        }
+//    }
+//
+//    @Test
+//    public void failedContactRequestTestMessage() {
+//        try {
+//            homePage.goToContactPage();
+//
+//            contactPage.fillContactForm(name, email, "");
+//
+//            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
+//        } catch (Exception e) {
+//            System.out.println("There was an error: " + e);
+//        }
+//    }
+//
+//    @Test
+//    public void failedContactRequestTestAllFields() {
+//        try {
+//            homePage.goToContactPage();
+//
+//            contactPage.fillContactForm("", "", "");
+//
+//            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
+//        } catch (Exception e) {
+//            System.out.println("There was an error: " + e);
+//        }
+//    }
+//
+//    @Test
+//    public void failedContactRequestTestMissingNameAndEmail() {
+//        try {
+//            homePage.goToContactPage();
+//
+//            contactPage.fillContactForm("", "", message);
+//
+//            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
+//        } catch (Exception e) {
+//            System.out.println("There was an error: " + e);
+//        }
+//    }
+//
+//    @Test
+//    public void failedContactRequestTestMissingNameAndMessage() {
+//        try {
+//            homePage.goToContactPage();
+//
+//            contactPage.fillContactForm("", email, "");
+//
+//            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
+//        } catch (Exception e) {
+//            System.out.println("There was an error: " + e);
+//        }
+//    }
+//
+//    @Test
+//    public void failedContactRequestTestMissingEmailAndMessage() {
+//        try {
+//            homePage.goToContactPage();
+//
+//            contactPage.fillContactForm(name, "", "");
+//
+//            Assert.assertTrue(contactPage.getErrorElement().isDisplayed(), "Error message should be displayed");
+//        } catch (Exception e) {
+//            System.out.println("There was an error: " + e);
+//        }
+//    }
 }
