@@ -11,7 +11,7 @@ accessKey: BROWSERSTACK_ACCESS_KEY
 # ======================
 # The following capabilities are used to set up reporting on BrowserStack:
 # Set 'projectName' to the name of your project. Example, Marketing Website
-projectName: TestNG Project Tests
+projectName: Test-ZSC
 # Set `buildName` as the name of the job / testsuite being run
 buildName: testng-tests
 # `buildIdentifier` is a unique id to differentiate every execution that gets appended to
@@ -34,14 +34,14 @@ platforms:
     osVersion: "Big Sur"
     browserName: Chrome
     browserVersion: latest
-  - os: Windows
-    osVersion: "11"
-    browserName: Edge
-    browserVersion: latest
-  - os: OS X
-    osVersion: "Sonoma"
-    browserName: Safari
-    browserVersion: latest
+#  - os: Windows
+#    osVersion: "11"
+#    browserName: Edge
+#    browserVersion: latest
+#  - os: OS X
+#    osVersion: "Sonoma"
+#    browserName: Safari
+#    browserVersion: latest
 
 # =======================
 # Parallels per Platform
@@ -82,3 +82,5 @@ consoleLogs: errors # <string> Remote browser's console debug levels to be print
 # Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
 testObservability: true
 accessibility: true
+percy: true
+percyCaptureMode: auto
