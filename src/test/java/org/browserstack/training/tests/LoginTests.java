@@ -2,6 +2,7 @@ package org.browserstack.training.tests;
 
 import org.browserstack.training.pageobjects.Home;
 import org.browserstack.training.pageobjects.Login;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -43,57 +44,50 @@ public class LoginTests {
 
     @Test
     public void successfulLoginTest() {
-        try {
-            PercySDK.screenshot(driver, "Home Page before Login");
             homePage.goToLoginPage();
-            PercySDK.screenshot(driver, "Login Before Entering Credentials");
-            loginPage.performLogin(correctUsername, correctPassword);
-            PercySDK.screenshot(driver, "Successful Login");
+            driver.findElement(By.id("username")).sendKeys(correctUsername);
+            driver.findElement(By.id("password")).sendKeys(correctPassword);
+            driver.findElement(By.id("submitButton")).click();
 
             Assert.assertEquals(loginPage.getSuccessElement().getText(), successMessage);
+    }
+
+    @Test
+    public void failedLoginTestUsername() {
+        try {
+            homePage.goToLoginPage();
+
+            loginPage.performLogin(wrongUsername, correctPassword);
+
+            Assert.assertEquals(loginPage.getErrorElement().getText(), incorrectUsernameMessage);
         } catch (Exception e) {
             System.out.println("There was an error: " + e);
         }
-
-
     }
 
-//    @Test
-//    public void failedLoginTestUsername() {
-//        try {
-//            homePage.goToLoginPage();
-//
-//            loginPage.performLogin(wrongUsername, correctPassword);
-//
-//            Assert.assertEquals(loginPage.getErrorElement().getText(), incorrectUsernameMessage);
-//        } catch (Exception e) {
-//            System.out.println("There was an error: " + e);
-//        }
-//    }
-//
-//    @Test
-//    public void failedLoginTestPassword() {
-//        try {
-//            homePage.goToLoginPage();
-//
-//            loginPage.performLogin(correctUsername, wrongPassword);
-//
-//            Assert.assertEquals(loginPage.getErrorElement().getText(), incorrectPasswordMessage);
-//        } catch (Exception e) {
-//            System.out.println("There was an error: " + e);
-//        }
-//    }
-//
-//    @Test
-//    public void failedLoginTestUsernameAndPassword() {
-//        try {
-//            homePage.goToLoginPage();
-//
-//            loginPage.performLogin(wrongUsername, wrongPassword);
-//
-//            Assert.assertEquals(loginPage.getErrorElement().getText(), incorrectUserAndPassMessage);
-//        } catch (Exception e) {
-//            System.out.println("There was an error: " + e);
-//        }
-//    }
+    @Test
+    public void failedLoginTestPassword() {
+        try {
+            homePage.goToLoginPage();
+
+            loginPage.performLogin(correctUsername, wrongPassword);
+
+            Assert.assertEquals(loginPage.getErrorElement().getText(), incorrectPasswordMessage);
+        } catch (Exception e) {
+            System.out.println("There was an error: " + e);
+        }
+    }
+
+    @Test
+    public void failedLoginTestUsernameAndPassword() {
+        try {
+            homePage.goToLoginPage();
+
+            loginPage.performLogin(wrongUsername, wrongPassword);
+
+            Assert.assertEquals(loginPage.getErrorElement().getText(), incorrectUserAndPassMessage);
+        } catch (Exception e) {
+            System.out.println("There was an error: " + e);
+        }
+    }
 }

@@ -868,3 +868,33 @@
 [percy] Error: Percy is already running or the port 5338 is in use
 [percy] Build's CLI and CI logs sent successfully. Please share this log ID with Percy team in case of any issues - 45070322_build_45070322_cli_60774c99ab9afbfde6905f95495c9b62b6f364ce
 [percy] Error: Percy is already running or the port 5338 is in use
+[percy] Notice: Percy collects CI logs to improve service and enhance your experience. These logs help us debug issues and provide insights on your dashboards, making it easier to optimize the product experience. Logs are stored securely for 30 days. You can opt out anytime with export PERCY_CLIENT_ERROR_LOGS=false, but keeping this enabled helps us offer the best support and features.
+[percy] Detected error for percy build
+[percy] Failure: Port already in use
+[percy] Failure Reason: The port used by Percy CLI is already in use.
+[percy] Suggestion: Percy failed to start, port 5338 is already occupied. Use --port <port> to start percy cli or kill process running on 5338 port.
+[percy] Refer to the below Doc Links for the same
+[percy] * https://www.browserstack.com/docs/percy/common-issue/common-errors/percy-port-in-use
+[percy] Error: Percy is already running or the port 5338 is in use
+[percy] Build's CLI and CI logs sent successfully. Please share this log ID with Percy team in case of any issues - 45075051_build_45075051_cli_61c4b9e3c4c2b7d8e0c17e3c3c5a48ed7c7873fa
+[percy] Error: Percy is already running or the port 5338 is in use
+[percy] Notice: Percy collects CI logs to improve service and enhance your experience. These logs help us debug issues and provide insights on your dashboards, making it easier to optimize the product experience. Logs are stored securely for 30 days. You can opt out anytime with export PERCY_CLIENT_ERROR_LOGS=false, but keeping this enabled helps us offer the best support and features.
+[percy] Detected error for percy build
+[percy] Failure: Port already in use
+[percy] Failure Reason: The port used by Percy CLI is already in use.
+[percy] Suggestion: Percy failed to start, port 5338 is already occupied. Use --port <port> to start percy cli or kill process running on 5338 port.
+[percy] Refer to the below Doc Links for the same
+[percy] * https://www.browserstack.com/docs/percy/common-issue/common-errors/percy-port-in-use
+[percy] Error: Percy is already running or the port 5338 is in use
+[percy] Build's CLI and CI logs sent successfully. Please share this log ID with Percy team in case of any issues - 45075080_build_45075080_cli_af415dcadde94d94d52ea6373a9d7ca54731cd00
+[percy] Error: Percy is already running or the port 5338 is in use
+[percy] Notice: Percy collects CI logs to improve service and enhance your experience. These logs help us debug issues and provide insights on your dashboards, making it easier to optimize the product experience. Logs are stored securely for 30 days. You can opt out anytime with export PERCY_CLIENT_ERROR_LOGS=false, but keeping this enabled helps us offer the best support and features.
+[percy] Detected error for percy build
+[percy] Failure: Port already in use
+[percy] Failure Reason: The port used by Percy CLI is already in use.
+[percy] Suggestion: Percy failed to start, port 5338 is already occupied. Use --port <port> to start percy cli or kill process running on 5338 port.
+[percy] Refer to the below Doc Links for the same
+[percy] * https://www.browserstack.com/docs/percy/common-issue/common-errors/percy-port-in-use
+[percy] Error: Percy is already running or the port 5338 is in use
+[percy] Build's CLI and CI logs sent successfully. Please share this log ID with Percy team in case of any issues - 45075159_build_45075159_cli_e636fe9121d9a27e9e7867bfb889cecddec52038
+[percy] Error: Percy is already running or the port 5338 is in use
